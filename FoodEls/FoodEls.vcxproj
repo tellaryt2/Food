@@ -139,7 +139,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Booking.h" />
+    <ClInclude Include="Employee.h" />
+    <ClInclude Include="Fridge.h" />
+    <ClInclude Include="human.h" />
+    <ClInclude Include="Kitchen.h" />
+    <ClInclude Include="OflineBooking.h" />
+    <ClInclude Include="OnlineBooking.h" />
+    <ClInclude Include="Pay.h" />
+    <ClInclude Include="Product.h" />
+    <ClInclude Include="Restaurant.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
