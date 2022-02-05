@@ -22,6 +22,6 @@ Product Fridge::TakeProduct(string name)
 			return temp;
 		}
 	}
-	Product null("такого продукта нет", 0, 0);
+	Product null("there is no such product", 0, 0);
 	return null;
 }
