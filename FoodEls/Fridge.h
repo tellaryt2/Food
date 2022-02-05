@@ -8,12 +8,11 @@ private:
 
 	list<Product> Storage;
 	list<Product>::iterator it = Storage.begin();
-
+	
 public:
 
 	Fridge();
-
 	void PutProduct(Product product);
-
-	Product TakeProduct(Product product);
+	Product TakeProduct(string name);
+	//Product TakeProduct(Product product);
 };
