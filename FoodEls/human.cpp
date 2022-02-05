@@ -1,126 +1,33 @@
-#include <iostream>
-#include <string>
+#include "human.h"
 
-using namespace std;
-
-
-class Human
+Human::Human(string fio, string gender)
 {
-private:
-	string Fio;
-	string Sex;
+	this->Fio = fio;
+	this->Gender = gender;
+}
 
-};
-
-
-class Product
+Human::Human()
 {
-private:
-	int Weight;
-	int Price;
-	int Calories;
-	string Name;
-};
+	this->Fio = "";
+	this->Gender = "";
+}
 
-
-class Employee : public Human 
+string Human::GetFio()
 {
-private:
-	string Passport;
-};
+	return Fio;
+}
 
-
-class TypeBooking : public Human
+string Human::GetGender()
 {
-private:
-	string NumberOrder;
-};
+	return Gender;
+}
 
-
-class Booking : public TypeBooking
+void Human::SetFio(string fio)
 {
-public:
-	int GetID(TypeBooking order, Human human)
-	{
+	this->Fio = fio;
+}
 
-	}
-private:
-	int ID;
-};
-
-
-class Online : public TypeBooking
+void Human::SetGender(string gender)
 {
-private:
-	string URL;
-};
-
-
-class Ofline : public TypeBooking
-{
-private:
-	string Adress;
-	Employee Waiter;
-};
-
-
-class Fridge : public Product
-{
-public:
-	void PutProduct(Product product)
-	{
-
-	}
-
-	void TakeProduct(Product product)
-	{
-
-	}
-};
-
-
-class Kitchen : public Fridge, Employee
-{
-public:
-	void PrepareDish(Product product, Employee cook)
-	{
-		this->Cook = cook;
-		//
-	}
-private:
-	Employee Cook;
-};
-
-
-class Restaurant : public Kitchen, Booking
-{
-public:
-	void ServeOfCustomer(Kitchen dish, Kitchen cook, Booking id)
-	{
-
-	}
-private:
-	string Score;
-};
-
-
-class Pay : public TypeBooking
-{
-public:
-	void PayOrder(TypeBooking order)
-	{
-
-	}
-
-	void PayScore(Restaurant score)
-	{
-
-	}
-};
-
-
-int main()
-{
-
-	return 0;
+	this->Gender = gender;
 }
