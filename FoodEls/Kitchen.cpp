@@ -5,7 +5,7 @@ void Kitchen::AddCook(Employee cook)
 	Cooks.push_back(cook);
 }
 
-Product Kitchen::PrepareDish(Product product, Employee cook)
+Product Kitchen::PrepareDish(Product product)
 {
 	//you can add a schedule of chefs
 	

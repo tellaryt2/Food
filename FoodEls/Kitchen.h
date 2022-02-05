@@ -9,7 +9,7 @@ class Kitchen
 public:
 
 	void AddCook(Employee cook);
-	Product PrepareDish(Product product, Employee cook);
+	Product PrepareDish(Product product);
 
 private:
 
