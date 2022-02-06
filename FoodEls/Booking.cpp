@@ -8,9 +8,9 @@ Booking::Booking(Human human)
 
 int Booking::GetID(Human human)
 {
+	ID = 1;
 	for (auto i = ListOfClients.begin(); i != ListOfClients.end(); i++)
 	{
-		ID = 1;
 		Order = i;
 		if (*Order == human.GetFio())
 		{
