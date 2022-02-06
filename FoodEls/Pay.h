@@ -3,16 +3,10 @@
 #include "Restaurant.h"
 
 
-class Pay : public Booking
+class Pay : public Booking, Restaurant
 {
 public:
-	void PayOrder(Booking order)
-	{
+	void PayOrder(Booking order);
 
-	}
-
-	void PayScore(Restaurant score)
-	{
-
-	}
+	void PayScore(Restaurant score);
 };
