@@ -5,14 +5,16 @@
 #include <list>
 
 
-class Booking : public Human
+class Booking
 {
-public:
-	int GetID(Booking order, Human human)
-	{
 
-	}
+public:
+	Booking(Human human);
+	int GetID(Human human);
+
 private:
+
 	int ID;
-	list<string> NumberOrder;
+	list<string> ListOfClients;
+	list<string>::iterator Order = ListOfClients.begin();
 };
