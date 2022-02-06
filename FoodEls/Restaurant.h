@@ -1,15 +1,15 @@
 #pragma once
 #include "Kitchen.h"
 #include "Booking.h"
-
+#include <vector>
 class Restaurant
 {
 public:
-	void ServeOfCustomer(Kitchen dish, Kitchen cook, Booking id)
-	{
-
-	}
+	void ServeOfCustomer(Product dish, Human human, Booking id);
+	int GetScore(Booking id, Human human);
 private:
-	list<string> Score;
+	vector<int> Score;
+	int ID;
+	Product Dish;
 };
 
